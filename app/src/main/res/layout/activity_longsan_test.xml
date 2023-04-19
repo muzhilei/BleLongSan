@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_getversion"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="版本信息"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="同步时间"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="复位指令"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_blood_info"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="一键测量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_sn"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="打开电量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_blood_set"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="血压标定"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_onpause_blood"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="暂停标定"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_stop_blood"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="结束标定"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="解析模式"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_blood_meansure"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="血压测量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_onpause_meansure"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="暂停测量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_stop_meansure"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="结束测量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_users_info"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="固件升级"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_heart_meansure"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="心电测量"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_onpause_heart"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="暂停心电"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_stop_heart"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="结束心电"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sc_txt"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+            <TextView
+                android:textColor="@android:color/holo_orange_light"
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textSize="13sp" />
+
+<!--        </LinearLayout>-->
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_blood_systolic_pressure"
+            android:layout_alignParentLeft="true"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="收缩压:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_blood_systolic"
+            android:layout_toRightOf="@+id/tv_blood_systolic_pressure"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_blood_diastolic_pressure"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_blood_systolic_pressure"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="舒张压:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_blood_diastolic"
+            android:layout_toRightOf="@+id/tv_blood_diastolic_pressure"
+            android:layout_below="@+id/tv_blood_systolic_pressure"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_blood_oxy_saturation_data"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_blood_diastolic"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="血氧:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_blood_oxy_saturation_data_txt"
+            android:layout_toRightOf="@+id/tv_blood_oxy_saturation_data"
+            android:layout_below="@+id/tv_blood_diastolic"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_pulse_rate_data"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_blood_oxy_saturation_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="脉搏:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_pulse_rate_data_txt"
+            android:layout_toRightOf="@+id/tv_pulse_rate_data"
+            android:layout_below="@+id/tv_blood_oxy_saturation_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_hrv_fatigue_data"
+            android:layout_below="@+id/tv_pulse_rate_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="疲劳度:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_hrv_fatigue_data"
+            android:id="@+id/tv_hrv_fatigue_data_txt"
+            android:layout_below="@+id/tv_pulse_rate_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_hrv_pressure_data"
+            android:layout_below="@+id/tv_hrv_fatigue_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="压力指数 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_hrv_pressure_data"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_hrv_pressure_data_txt"
+            android:layout_below="@+id/tv_hrv_fatigue_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_hrv_mental_data"
+            android:layout_below="@+id/tv_hrv_pressure_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="精神压力 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_hrv_mental_data"
+            android:id="@+id/tv_hrv_mental_data_txt"
+            android:layout_below="@+id/tv_hrv_pressure_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_hrv_compressive_data"
+            android:layout_below="@+id/tv_hrv_mental_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="抗压能力 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_hrv_compressive_data"
+            android:id="@+id/tv_hrv_compressive_data_txt"
+            android:layout_below="@+id/tv_hrv_mental_data_txt"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_hrv_compressive_data"
+            android:id="@+id/tv_heart_rate_title"
+            android:textSize="26sp"
+            android:textColor="@android:color/white"
+            android:text="心电波形数据:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_heart_rate_data"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_heart_rate_title"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="心电波形:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_heart_rate_data_txt"
+            android:layout_toRightOf="@+id/tv_heart_rate_data"
+            android:layout_below="@+id/tv_heart_rate_title"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:text="---"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.homjay.longsandemo.view.HeartView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/heart_view"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:background="@color/color_272D46"
+            android:visibility="visible"
+            app:heart_base_line="2048"
+            app:heart_color="@color/color_3BC78F"
+            app:heart_grid_border_color="@color/color_343952"
+            app:heart_grid_line_color="@color/color_343952"
+            app:heart_is_curve="true"
+            app:heart_line_border="2dp"
+            app:heart_max="4096"
+            app:heart_min="0" />
+
+        <TextView
+            android:id="@+id/tv_send_byte"
+            android:text="Send : ---字节"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/heart_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.homjay.longsandemo.view.HeartView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/heart_view"
+            android:layout_alignParentRight="true"
+            android:id="@+id/blood_oxy_view"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:background="@color/color_272D46"
+            android:visibility="visible"
+            app:heart_base_line="128"
+            app:heart_color="@color/color_3BC78F"
+            app:heart_grid_border_color="@color/color_343952"
+            app:heart_grid_line_color="@color/color_343952"
+            app:heart_is_curve="true"
+            app:heart_line_border="2dp"
+            app:heart_max="255"
+            app:heart_min="0" />
+
+        <TextView
+            android:id="@+id/tv_cout_down"
+            android:text="倒计时：150s"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/blood_oxy_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

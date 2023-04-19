@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:text="命令输入："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="aa55000303"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/et_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_above="@+id/tv_open"
+        android:layout_below="@+id/ll_input"
+        android:text="输出"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/tv_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_open"
+        android:text="打开通知"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:text="同步时间"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_sure"
+            android:text="确认"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_clear"
+            android:text="清除"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
